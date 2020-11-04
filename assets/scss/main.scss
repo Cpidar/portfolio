@@ -1,0 +1,11 @@
+html { overflow-y: scroll;}
+body { overflow: hidden;}
+
+@import "theme/variables.scss";
+
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+
+@import "theme/mixins/import";
+
+@import "~uikit/src/scss/uikit-theme.scss";

@@ -1,0 +1,6 @@
+@mixin hook-slidenav() {
+    background-color: black;
+}
+@mixin hook-slidenav-hover() {
+    background-color: $global-color;
+}

@@ -1,0 +1,17 @@
+@mixin hook-thumbnav-misc() {
+
+    .uk-thumbnav > * >::after {
+        border: 5px solid transparent;
+    }
+  
+    .uk-thumbnav > * > :hover {
+      &::after {
+        border-color: $global-color;
+      }
+    }
+  
+    .uk-thumbnav > .uk-active > *::after {
+      border-color: white;
+    }
+  }
+  
