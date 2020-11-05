@@ -17,7 +17,6 @@ import FooterSection from '~/components/footer.vue'
 export default {
   components: {
     Header,
-    FooterMenu,
     FooterSection,
   },
   data () {
