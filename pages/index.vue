@@ -5,7 +5,7 @@
     <!-- <banner-category :items="categories" /> -->
     <items-grid
       :title="title"
-      :items="products"
+      :items="items"
     />
     <!-- <blog-grid :posts="posts" /> -->
     <!-- <banner-about :items="about" /> -->
@@ -33,9 +33,10 @@ export default {
   },
   async asyncData({ $content }) {
     const { title } = await $content('hello').only(['title']).fetch()
+    const items = await $content('items').fetch()
     return {
       title,
-      items: []
+      items
     };
   },
   methods: {

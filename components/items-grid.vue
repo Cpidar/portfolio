@@ -20,27 +20,27 @@
               >
                 <a
                   class="uk-card uk-card-default uk-link-toggle uk-display-block uk-border-rounded uk-transition-toggle"
-                  :href="'/homes/'+item.id"
+                  :href="item.url"
                   uk-scrollspy-class
                 >
                   <div class="uk-card-media-top uk-inline-clip uk-border-rounded">
-                    <div class="uk-card-badge uk-label uk-label-warning" v-if="item.focused">{{item.flag}}</div>
+                    <!-- <div class="uk-card-badge uk-label uk-label-warning" v-if="item.focused">{{item.flag}}</div> -->
                     <img
                       class="uk-transition-scale-up uk-transition-opaque"
                       alt
-                      :data-src="item.images[0] ? baseImagePath+item.images[0].url : '/images/default.jpg'"
-                      :data-srcset="item.images[0] ? baseImagePath+item.images[0].url : '/images/default.jpg'"
+                      :data-src="item.image"
+                      :data-srcset="item.image"
                       data-sizes="(min-width: 610px) 610px"
                       data-width="610"
                       data-height="407"
                       uk-img
                       sizes="(min-width: 610px) 610px"
-                      :srcset="item.images[0] ? baseImagePath+item.images[0].url : '/default.jpg'"
-                      :src="item.images[0] ? baseImagePath+item.images[0].url : '/default.jpg'"
+                      :srcset="item.image"
+                      :src="item.image"
                     />
                   </div>
                   <div class="uk-card-body uk-margin-remove-first-child">
-                    <p class="uk-text-meta uk-margin-remove-bottom">{{item.category.name}}</p>
+                    <!-- <p class="uk-text-meta uk-margin-remove-bottom">{{item.category.name}}</p> -->
                     <h3 class="el-title uk-h5 uk-margin-small">{{item.title}}</h3>
                     <!-- <p class="uk-text-meta uk-margin-remove-top"><span class="uk-margin-small-left" uk-icon="location"></span>{{item.neighborhood.name}}</p> -->
                     <!-- <div

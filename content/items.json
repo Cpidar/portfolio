@@ -1,0 +1,20 @@
+[
+    {
+        "title": "test0",
+        "slug": "adfas",
+        "image": "/images/home-bg.webp",
+        "url": "http://"
+    },
+    {
+        "title": "test1",
+        "slug": "adfasd",
+        "image": "/images/home-bg.webp",
+        "url": "http://"
+    },
+    {
+        "title": "test2",
+        "slug": "tere",
+        "image": "/images/home-bg.webp",
+        "url": "http://"
+    }
+]

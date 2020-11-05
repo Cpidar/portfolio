@@ -4,7 +4,6 @@
 
         <nuxt />
 
-    <footer-menu />
     <footer-section />
   </div>
 
@@ -13,7 +12,6 @@
 <script>
 // Import your new Header component
 import Header from '~/components/header.vue'
-import FooterMenu from '~/components/footer-menu.vue'
 import FooterSection from '~/components/footer.vue'
 
 export default {
